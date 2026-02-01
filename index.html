@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>My Product Store</h1>
+
+<div class="controls">
+  <label>Filter by Category:
+    <select id="filterCategory">
+      <option value="All">All</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Clothing">Clothing</option>
+      <option value="Toys">Toys</option>
+      <option value="Home Appliances">Home Appliances</option>
+      <option value="Books">Books</option>
+    </select>
+  </label>
+
+  <label>Sort by:
+    <select id="sortProducts">
+      <option value="">None</option>
+      <option value="priceAsc">Price: Low → High</option>
+      <option value="priceDesc">Price: High → Low</option>
+      <option value="nameAsc">Name: A → Z</option>
+      <option value="nameDesc">Name: Z → A</option>
+      <option value="ratingAsc">Rating: Low → High</option>
+      <option value="ratingDesc">Rating: High → Low</option>
+    </select>
+  </label>
+</div>
+
+<div id="productContainer" class="product-grid"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
